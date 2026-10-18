@@ -3,11 +3,26 @@
 按《普通话水平测试大纲》走完四项机考流程的**本地化模拟考试系统**，同时提供 **网页版** 与 **Android APK**：本地 TTS 播报考试提示音 → 麦克风录音 → 讯飞 ISE 逐字发音评测（前三项）→ 外部大模型按大纲评分（命题说话）。
 
 - 🌐 **在线体验（无需安装）**：<https://OLingYu.github.io/psc-exam/>
-- 📱 **下载 Android APK**：<https://github.com/OLingYu/psc-exam/releases/latest>
+- 📱 **下载 Android APK（v1.0.0）**
+  - 国内直连（推荐）：<https://OLingYu.github.io/psc-exam/psc-exam-1.0.0-release.apk>
+  - GitHub Releases：<https://github.com/OLingYu/psc-exam/releases/latest>
 - 纯前端（Vite + React + TypeScript），没有后端，凭据只存在本机浏览器 `localStorage`
 - 麦克风录音、本地 TTS 都在设备内完成；未配置接口时自动进入**演示模式**，可以先跑通全流程
 
 > 麦克风只能在 `https://` 或 `127.0.0.1 / localhost` 下使用。GitHub Pages 与 Android WebView 都是安全上下文，可以直接录音。
+
+### 国内网络怎么办
+
+`github.com` 在国内经常连不上，`api.github.com` / `*.github.io` 一般可用。所以：
+
+- 网页版和 APK 走 **GitHub Pages**，国内可以直接打开、直接下载
+- 克隆仓库时给 git 加一层镜像前缀即可（本仓库就是用 `ghfast.top` 推上去的）：
+
+```bash
+git clone https://ghfast.top/https://github.com/OLingYu/psc-exam.git
+# 已克隆过的仓库也可以直接换远程地址
+git remote set-url origin https://ghfast.top/https://github.com/OLingYu/psc-exam.git
+```
 
 ---
 
