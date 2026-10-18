@@ -1,0 +1,28 @@
+{
+  "name": "psc-exam",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "普通话水平测试（PSC）模拟考试前端 · 本地TTS提示音 + 讯飞ISE发音评测 + 外部大模型评分",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "mock": "node tools/mock_server.mjs 8100",
+    "e2e": "node tools/e2e_test.mjs",
+    "data:works": "python tools/extract_works.py",
+    "data:bank": "python tools/build_bank.py"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer-core": "^25.14.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

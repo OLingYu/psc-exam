@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+.idea/
+local.properties
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 签名材料（升级安装必须复用同一 keystore，但不要把密钥提交到公开仓库）
+keystore.properties
+keystore/*.jks
+
+# 构建产物（build_apk.ps1 会把 APK 归档到这里）
+out/

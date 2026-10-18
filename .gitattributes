@@ -1,0 +1,24 @@
+# 统一换行符，避免 Windows / macOS / Linux 之间产生整文件 diff
+* text=auto eol=lf
+
+# Windows 脚本保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 二进制文件不做换行转换、不做 diff
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.apk binary
+*.jar binary
+*.jks binary
+*.keystore binary
+*.wav binary
+*.mp3 binary
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary

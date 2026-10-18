@@ -1,0 +1,38 @@
+# ---- 依赖 ----
+node_modules/
+.pnpm-store/
+
+# ---- 构建产物 ----
+psc-exam-web/dist/
+psc-exam-web/dist-pages/
+psc-exam-Android/out/
+psc-exam-Android/build/
+psc-exam-Android/app/build/
+psc-exam-Android/.gradle/
+psc-exam-Android/.kotlin/
+psc-exam-Android/app/src/main/assets/web/
+psc-exam-Android/captures/
+psc-exam-Android/.externalNativeBuild/
+psc-exam-Android/.cxx/
+
+# ---- 本地配置与签名材料（切勿提交） ----
+psc-exam-Android/local.properties
+psc-exam-Android/keystore.properties
+psc-exam-Android/keystore/*.jks
+*.keystore
+*.jks
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 临时文件 ----
+*.log
+*.tmp
+tmp/
+dist-pages/
+psc-exam-Android/app/src/main/assets/

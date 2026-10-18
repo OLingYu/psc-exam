@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">普通话模拟考试</string>
+    <string name="mic_permission_hint">未授予麦克风权限，无法录音答题</string>
+    <string name="saved_toast">已保存：%1$s</string>
+    <string name="save_failed_toast">保存失败：%1$s</string>
+</resources>
